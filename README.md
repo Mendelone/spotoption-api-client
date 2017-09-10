@@ -1,4 +1,7 @@
 # SpotOption API Client.
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/973f3914cba64296aa7bea228bbbf040)](https://www.codacy.com/app/write2aleksin/spotoption-api-client?utm_source=github.com&utm_medium=referral&utm_content=Mendelone/spotoption-api-client&utm_campaign=badger)
+
 API Client for binary options platform SpotOption.
 
 ## Installation
