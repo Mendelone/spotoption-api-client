@@ -5,8 +5,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Alexander Emelyanov",
-      "email": "alexander.emelyanov@outlook.com"
+      "name": "Mendelone",
+      "email": "write2aleksin@icloud.com"
     }
   ],
   "require": {
@@ -26,6 +26,11 @@
   "autoload-dev": {
     "psr-4": {
       "SpotOption\\Tests\\": "tests"
+   {
+    "require": {
+        "rollbar/rollbar": "~1.1"
     }
-  }
 }
+    }
+    
+  }
