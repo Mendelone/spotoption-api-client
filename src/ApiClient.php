@@ -188,6 +188,32 @@ class ApiClient implements LoggerAwareInterface
         }
     }
 
+    <?php
+use \Rollbar\Rollbar;
+use \Rollbar\Payload\Level;
+
+// installs global error and exception handlers
+Rollbar::init(
+    array(
+        'access_token' => '3bd9df11f7b14c6992d44e39007b3daf',
+        'environment' => 'development'
+    )
+);
+
+// Message at level 'info'
+Rollbar::log(Level::info(), 'testing 123');
+
+// Catch an exception and send it to Rollbar
+try {
+    throw new \Exception('test exception');
+} catch (\Exception $e) {
+    Rollbar::log(Level::error(), $e);
+}
+
+// Will also be reported by the exception handler
+throw new Exception('test 2');
+
+?>
 
     /**
      * This method should be used instead direct access to property $httpClient
